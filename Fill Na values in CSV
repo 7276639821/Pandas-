@@ -1,0 +1,13 @@
+import pandas as pd
+df=pd.read_csv('any file')
+
+#Fille NAN with 0 
+df.filna(0)
+
+#Fill NAN with key value
+df.fillna({'tempera':0,
+'speed':0,
+'event':'NO_EVENT'})
+
+#Fill Nan with last values
+df.fillna(method='ffill')   #ffill-carry forward last day value 
