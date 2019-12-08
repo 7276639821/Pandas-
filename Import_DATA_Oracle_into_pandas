@@ -1,4 +1,8 @@
 import cx_Oracle as db
+username=input('')
+password=input('')
+host=input('')
+SID=input('')
 Connection_Detail=db.connect('username/password@host/SID')
 import pandas as pd
 DATA=pd.READ_SQL_TBALE('Selet * from Table_nm')
