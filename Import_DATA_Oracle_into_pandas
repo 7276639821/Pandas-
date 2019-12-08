@@ -1,0 +1,5 @@
+import cx_Oracle as db
+Connection_Detail=db.connect('username/password@host/SID')
+import pandas as pd
+DATA=pd.READ_SQL_TBALE('Selet * from Table_nm')
+print(DATA.head(5))
